@@ -1,6 +1,6 @@
 import diaryData from "../diaries.json"
 
-import { DiaryEntry } from '../types'
+import { DiaryEntry, NonSensitiveDiaryEntry } from '../types'
 
 const diaries: Array<DiaryEntry> = (diaryData as DiaryEntry[])
 
@@ -8,10 +8,26 @@ const getDiaries = (): Array<DiaryEntry> => {
     return diaries
 }
 
-const saveDiary = () => undefined
 
 
-export{
+const getNonSensitiveEntries = (): NonSensitiveDiaryEntry[] => {
+    return diaries.map(({ id, date, weather, visibility }) => ({
+        id,
+        date,
+        weather,
+        visibility,
+    }));
+};
+
+
+const saveDiary = ( ) => {
+
+    return 
+}
+
+
+export default{
     getDiaries,
-    saveDiary
+    saveDiary, 
+    getNonSensitiveEntries
 }

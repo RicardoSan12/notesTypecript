@@ -8,4 +8,24 @@ export interface DiaryEntry {
     weather: Weather;
     visibility: Visibility;
     comment: string;
-  }
+}
+
+export type NonSensitiveDiaryEntry = Omit<DiaryEntry, 'comment'>;
+
+// export interface secretDiaryEntry extends DiaryEntry {
+//     stars: number;
+// }
+
+
+
+// export type DiaryEntry2 = {
+//     id: number;
+//     date: string;
+//     weather: Weather;
+//     visibility: Visibility;
+//     comment: string;
+// }
+
+// export type secretDiaryEntry2 = DiaryEntry2 & {
+//     stars: number
+// }
