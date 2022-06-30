@@ -1,0 +1,35 @@
+{
+  "name": "airline",
+  "version": "1.0.0",
+  "description": "Aprendiendo typecript con node",
+  "main": "build/index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev index.ts",
+    "test": "",
+    "start": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoSan12/notesTypecript.git"
+  },
+  "keywords": [
+    "typescript",
+    "express"
+  ],
+  "author": "Ricardo Sanchez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RicardoSan12/notesTypecript/issues"
+  },
+  "homepage": "https://github.com/RicardoSan12/notesTypecript#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "eslint": "^8.18.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
